@@ -259,7 +259,7 @@
         background: var(--colorText);
         border: 1px solid #fff;
         padding: 20px 10px;
-        transform: translateX(100%);
+        transform: translateX(120%);
         transition: 1s;
     }
     .nav-list{

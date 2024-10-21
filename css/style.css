@@ -66,9 +66,8 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 6%;
+    gap: 10%;
 }
-
 button {
     background-color: var(--colorButon);
     color: var(--colorText);
@@ -93,7 +92,7 @@ button {
 }
 
 
-/* description */
+/* секция */
 
 
 .description {
@@ -113,7 +112,7 @@ button {
     font-size: 84px;
 }
 
-/* offer__all */
+/* секция */
 
 .offer__all {
     display: flex;
@@ -133,23 +132,39 @@ button {
     color: var(--colorButon);
 }
 
-/* partner */
+/* секция */
 
 .partner {
-    display: flex;  /* !important */
+    display: flex  !important ;
     justify-content: space-around;
     align-items: center;
     background: var(--colorText);
     padding: 2% 0;
 }
 
-/* new */
+/* секция */
 
 .new {
     background: var(--section);
     padding: 8% 0;
 }
+.new__all {
+    display: flex !important;
+    justify-content: space-between;
+}
 
+.new__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 350px !important;
+    background: var(--colorText);
+    border-radius: 10px;
+    padding: 0 2% 2%; 
+}
+.new__card>img{
+    width: 100%;
+}
 .new__all {
     display: block;  
 }
@@ -167,16 +182,6 @@ button {
 .new__all .slick-list {
     overflow: hidden;  
 }
-.new__card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 3vh;
-    max-width: 90%;
-    background: var(--colorText);
-    border-radius: 10px;
-    padding: 0 2% 2%; 
-}
 .flag {
     display: flex;
     justify-content: space-between;
@@ -184,7 +189,7 @@ button {
 .flag>img {
     position: relative;
     top: 5px;
-    left: -6px;
+    left: -16px;
 }
 .flag>p {
     display: flex;
@@ -199,10 +204,6 @@ button {
     flex-direction: column;
     gap: 3vh;
 }
-.card__part>img {
-    width: 100%;
-    object-fit: cover;
-}
 .new__button {
     display: flex;
     justify-content: center;
@@ -211,7 +212,7 @@ button {
     padding: 4% 0;
 }
 
-/* catalog */
+/* секция */
 
 .catalog {
     background: var(--colorText);
@@ -242,7 +243,7 @@ button {
     display: none;
 }
 
-/* about__company */
+/* секция */
 
 
 .about__company {
@@ -296,7 +297,7 @@ button {
     padding: 0 0 5%;
 }
 
-/* models */
+/* секция */
 
 .models {
     background-color: rgb(32, 32, 32);
@@ -355,7 +356,7 @@ button {
     display: none;
 }
 
-/* mountain */
+/* секция */
 
 .mountain {
     padding: 6%;
@@ -401,7 +402,7 @@ button {
     object-fit: cover;
 }
 
-/* advantages */
+/* секция */
 
 .advantages {
     padding: 6% 0;
@@ -436,15 +437,16 @@ button {
     padding: 10%;
 }
 
-/* equipment*/
+/* секция */
 
-.equipment {
+.equipment{
     padding: 6% 0;
     background-color: var(--section);
 }
+
 .equipment__all {
-    display: flex !important; 
-    justify-content: space-between; 
+     display: flex !important; 
+     justify-content: space-between; 
     gap: 36px;
 }
 .equipment__card {
@@ -461,11 +463,32 @@ button {
     justify-content: flex-end;
     color: red;
 }
+.equipment__all {
+    display: block;  
+}
+
+.equipment__all .slick-slide {
+    display: block;  
+    float: none;    
+}
+
+.equipment__all .slick-track {
+    display: flex !important;  
+    flex-wrap: nowrap;         
+}
+
+.equipment__all .slick-list {
+    overflow: hidden;  
+}
+
+.slick-arrow{
+    height: 50px;
+}
 
 .btn {
     border: none;
-    background: transparent;  /* прозрачный фот */
-    outline: none;  /* цвет по клику */
+    background: transparent;  
+    outline: none; 
     cursor: pointer;;
 } 
 .slider-btn {
@@ -517,7 +540,7 @@ button {
 }
 
 
-/* last */
+/* секция */
 
 .last {
     padding: 6% 0;
@@ -531,7 +554,7 @@ button {
     justify-content: space-between;
     gap: 30px;
 }
-.last__card_1, .last__card_2, .last__card_3, .last__card_4 {
+.last__card {
     display: flex;
     flex-direction: column;
     width: 25%;
@@ -556,7 +579,7 @@ button {
     padding-top: 50px;
 }
 
-/* contacts__map */
+/* секция */
 
 .contacts__map {
     padding: 6% 0;
@@ -586,7 +609,7 @@ button {
     gap: 20px;
 }
 
-/* inputs */
+/* секция */
 
 .inputs {
     background-color: rgba(19, 19, 19, 1);
@@ -615,7 +638,9 @@ button {
     display: flex;
 }
 
-/* footer */
+
+/* секция */
+
 
 .footer__all {
     padding: 4% 0 10%;
@@ -626,6 +651,7 @@ button {
     justify-content: flex-start;
     gap: 460px;
     color: var(--colorText);
+
 }
 .footer__icon {
     display: flex;

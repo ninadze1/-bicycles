@@ -279,7 +279,7 @@
     .burger-menu.active::before {
         transform: rotate(45deg);
         transition: 1s;
-        right:0;
+        right:20px;
         top: 9px;
         z-index: 5;
     }
@@ -287,7 +287,7 @@
         transform: rotate(-45deg);
         transition: 1s;
         bottom: 9px;
-         right:0;
+         right:20px;
     }
 
     .burger-menu.active span {

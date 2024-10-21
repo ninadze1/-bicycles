@@ -5,7 +5,7 @@ function burgerOpen() {
     nav.classList.toggle('active');
 }
 burger.addEventListener('click',burgerOpen);
-
+$(document).ready(function(){
 $('.partner').slick({
     arrows: false,
     dots: false,
@@ -41,9 +41,9 @@ $('.partner').slick({
       }
     ]
   });
+});
 
-
-
+$(document).ready(function(){
     $('.equipment__all').slick({
         arrows: true,
         infinite: true,
@@ -63,7 +63,8 @@ $('.partner').slick({
           }
         ]
     });
-
+});
+$(document).ready(function(){
     $('.new__all').slick({
       arrows: true,
       infinite: true,
@@ -83,3 +84,4 @@ $('.partner').slick({
         }
       ]
   });
+    });
